@@ -1,0 +1,48 @@
+div:hover{
+    background-color: orange;
+}
+
+.div1{
+    color: orangered;
+}
+
+.div2{
+    color: paleturquoise;
+}
+
+.div3{
+    height: 300px;
+    color: purple;
+    border: 5px green solid;
+}
+
+.div4{
+    color: salmon;
+}
+
+.div5{
+    color: springgreen;
+}
+
+.h31{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.h32{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h33{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.h34{
+    font-family: fantasy;
+}
+
+.h35{
+    font-family: sans-serif;
+    font-style: italic;
+}
