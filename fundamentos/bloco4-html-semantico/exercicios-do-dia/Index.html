@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
+    <div class="upper-content">
       <header>
         <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
       </header>
@@ -19,91 +20,105 @@
     </div>
     <main>
       <div>
+        <h2>Fatos sobre o Stomatopoda</h2>
         <article>
-          <section>
-            <h2>Fatos sobre o Stomatopoda</h2>
-            <h3>Informações Gerais</h3>
-            <p>
-              Também conhecidos como Odontodactylus scyllarus, os estomatópodes
-              são predadores ativos que caçam presas com o auxílio de um sentido
-              de visão muito apurado e capaz de interpretar polarização no
-              espectro ultravioleta e infravermelho.
-            </p>
-            <table>
-              <tr>
-                <th>Reino</th>
-                <th>Filo</th>
-                <th>Subfilo</th>
-                <th>Classe</th>
-              </tr>
-              <tr>
-                <td>Animalia</td>
-                <td>Arthropoda</td>
-                <td>Crustacea</td>
-                <td>Malacostraca</td>
-              </tr>
-            </table>
-          </section>
-          <section>
-            <h3>Informação Relevante #1</h3>
-            <img
-              src="https://cdn.uanews.arizona.edu/s3fs-public/styles/gallery-large-800x600/public/story-images/mantis-shrimp-eye-closeup.jpg?itok=ZPUnO3U2"
-              alt="Stomatopoda Eyes"
-            />
-            <p>
-              O sistema de visão dos estomatópodes possui doze cones sensíveis à
-              luz e outros quatro que filtram a luz (16 cones no total), o que
-              lhes permite ver cores polarizadas e imagens multiespectrais. Como
-              cada cone pode ver cerca de 100 cores, os estomatópodes são
-              capazes de ver 1024 cores, ou seja, 1 septilhão de cores. Em
-              comparação, o olho humano vê 106 cores, ou seja, 1 milhão de cores
-              apenas. A visão dos estomatópodes é sensível à luz ultravioleta,
-              mas ainda é desconhecido se ela pode distinguir a luz
-              infravermelha.[7]
-            </p>
-          </section>
-          <section>
-            <h3>Informação Relevante #2</h3>
-            <img
-              src="https://especiesmarinhas.blogspot.com/2018/03/s-toma-topoda-lagosta-boxeadora.html"
-              alt="Stomatopoda Hiding Spot"
-            />
-            <p>
-              Eles vivem em fundo consolidado, lodoso ou ainda arenoso, onde
-              cavam seus buracos ou aproveitam-se dos orifícios deixados por
-              outros animais para neles se instalar.
-            </p>
-          </section>
-          <section>
-            <h3>Informação Relevante #3</h3>
-            <img
-              src="https://especiesmarinhas.blogspot.com/2018/03/s-toma-topoda-lagosta-boxeadora.html"
-              alt="Close look on Stomatopoda"
-            />
-            <p>
-              De acordo com a anatomia da sua pata raptorial é possível
-              distinguir entre dois grupos funcionais, as perfuradoras
-              (spearers) ou as esmagadoras (smashers), sendo que cada um dos
-              tipos apresenta sua própria variação comportamental e até mesmo de
-              habitat. As maiores esmagadoras, tais como exemplares de
-              Odontodactylus scyllarus, são capazes de desferir um dos mais
-              rápidos e violentos golpes do reino animal, um soco que pode
-              apresentar a velocidade de um tiro calibre .22 (equivalente a 720
-              km/h) e uma pressão de impacto de 600 N/cm².[3] Essa força
-              esmagadora é a responsável pelo seu título de "lagosta-boxeadora"
-              e é capaz de facilmente quebrar a carapaça de um caranguejo, as
-              conchas duras e calcificadas de gastrópodes ou até mesmo quebrar o
-              vidro reforçado de um aquário.
-            </p>
-          </section>
+          <div>
+            <section>
+              <h3>Informações Gerais</h3>
+              <p>
+                Também conhecidos como
+                <span class="sci-name">Odontodactylus scyllarus</span>, os
+                estomatópodes são predadores ativos que caçam presas com o
+                auxílio de um sentido de visão muito apurado e capaz de
+                interpretar polarização no espectro ultravioleta e
+                infravermelho.
+              </p>
+            </section>
+            <aside>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=E0Li1k5hGBE"
+                  target="_blank"
+                  >Stomatopoda em Ação</a
+                >
+              </div>
+            </aside>
+            <section>
+              <table>
+                <tr>
+                  <th>Reino</th>
+                  <th>Filo</th>
+                  <th>Subfilo</th>
+                  <th>Classe</th>
+                </tr>
+                <tr>
+                  <td>Animalia</td>
+                  <td>Arthropoda</td>
+                  <td>Crustacea</td>
+                  <td>Malacostraca</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+          <div>
+            <section class="relevant-info">
+              <h3>Informação Relevante #1</h3>
+              <img
+                src="https://cdn.uanews.arizona.edu/s3fs-public/styles/gallery-large-800x600/public/story-images/mantis-shrimp-eye-closeup.jpg?itok=ZPUnO3U2"
+                alt="Stomatopoda Eyes"
+              />
+              <p>
+                O sistema de visão dos estomatópodes possui doze cones sensíveis
+                à luz e outros quatro que filtram a luz (16 cones no total), o
+                que lhes permite ver cores polarizadas e imagens
+                multiespectrais. Como cada cone pode ver cerca de 100 cores, os
+                estomatópodes são capazes de ver 10^24 cores, ou seja,
+                <span>1 septilhão de cores</span>. Em comparação, o olho humano
+                vê 10^6 cores, ou seja, 1 milhão de cores apenas. A visão dos
+                estomatópodes é <span>Sensível à luz ultravioleta</span>, mas
+                ainda é desconhecido se ela pode distinguir a luz infravermelha.
+              </p>
+            </section>
+            <section id="info-2" class="relevant-info">
+              <h3>Informação Relevante #2</h3>
+              <img
+                src="https://2.bp.blogspot.com/-ppAKr666leI/WrBhMXUvNnI/AAAAAAAAOcI/mUI_4zKggeEZpsl02VQj_Mc7xY7sbCaoACLcBGAs/s1600/images%2B%25281%2529.jpg"
+                alt="Stomatopoda Hiding Spot"
+              />
+              <p>
+                Eles vivem em fundo consolidado, lodoso ou ainda arenoso, onde
+                cavam seus buracos ou aproveitam-se dos orifícios deixados por
+                outros animais para neles se instalar.
+              </p>
+            </section>
+            <section class="relevant-info">
+              <h3>Informação Relevante #3</h3>
+              <img
+                src="https://1.bp.blogspot.com/-TV7cmvQks9I/WrBgjDVQUeI/AAAAAAAAOb0/zQW3-D2QmJYMlmr04K76KH0jwVLPKMjwwCEwYBhgL/s320/616.jpg"
+                alt="Close look on Stomatopoda"
+              />
+              <p>
+                De acordo com a anatomia da sua pata raptorial é possível
+                distinguir entre dois grupos funcionais, as perfuradoras
+                (spearers) ou as esmagadoras (smashers), sendo que cada um dos
+                tipos apresenta sua própria variação comportamental e até mesmo
+                de habitat. As maiores esmagadoras, tais como exemplares de
+                Odontodactylus scyllarus, são capazes de desferir um dos mais
+                rápidos e violentos golpes do reino animal,<span>
+                  um soco que pode apresentar a velocidade de um tiro calibre
+                  .22 (equivalente a 720 km/h)
+                </span>
+                e uma pressão de impacto de 600 N/cm².Essa força esmagadora é a
+                responsável pelo seu título de "lagosta-boxeadora" e é capaz de
+                facilmente quebrar a carapaça de um caranguejo, as conchas duras
+                e calcificadas de gastrópodes ou até mesmo
+                <span> quebrar o vidro reforçado de um aquário </span>.
+              </p>
+            </section>
+          </div>
         </article>
-        <aside>
-          <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE" target="_blank"
-            >Stomatopoda em Ação</a
-          >
-        </aside>
       </div>
-      <section>
+      <section class="ref">
         <h3>Referências Bibliográficas</h3>
         <a
           href="https://especiesmarinhas.blogspot.com/2018/03/s-toma-topoda-lagosta-boxeadora.html"
@@ -128,7 +143,7 @@
       </section>
     </main>
     <footer>
-        <h4>Conteúdo compilado por Alexandre Lustosa Escossio,2021</h4>
+      <h4>Conteúdo compilado por Alexandre Lustosa Escossio, 2021.</h4>
     </footer>
   </body>
 </html>
