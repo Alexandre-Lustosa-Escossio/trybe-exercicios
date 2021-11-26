@@ -34,6 +34,7 @@ function createDaysOfTheMonth(array) {
     if (day === 4 || day === 11 || day === 18 || day === 25) {
       child.classList.add("friday");
     }
+    child.style.fontSize = '20px'
     ulMonthDays.appendChild(child);
   }
 }
@@ -92,3 +93,59 @@ function changeDayText() {
   }
   changesCount += 1;
 }
+
+//Exercicio 6
+let li = document.getElementsByTagName("li")
+for (let i of li){
+  i.addEventListener('mouseover',applyZoom)
+  i.addEventListener('mouseout',zoomOut)
+}
+function applyZoom(event){
+  let mouseOverElement = event.target
+  let fontSize = parseInt(mouseOverElement.style.fontSize) 
+  fontSize += 20
+  mouseOverElement.style.fontSize = fontSize +'px'
+}
+
+function zoomOut(event){
+  let mouseOverElement = event.target
+  let fontSize = parseInt(mouseOverElement.style.fontSize) 
+  fontSize -= 20
+  mouseOverElement.style.fontSize = fontSize +'px'
+}
+
+//Exercicio 7
+let addBtn = document.getElementById('btn-add')
+addBtn.addEventListener('click',addToTaskList)
+function addToTaskList(){
+  let input = document.getElementById('task-input')
+  let taskList = document.querySelector('.my-tasks')
+  //Exercicio 8
+  var div = document.createElement('div')
+  let colors = [Math.random()*100,Math.random()*100,Math.random()*100]
+  console.log(JSON.stringify(colors))
+  div.style.height = '10px'
+  div.style.width = '10px'
+  div.style.backgroundColor = 'rgb(' + colors +')'
+  console.log(div.style.backgroundColor);
+  div.style.display = 'inline-block'
+  div.style.marginBottom = '10px'
+  div.style.marginLeft = '40%'
+  div.style.marginRight = '1%'
+  div.className = 'task'
+  taskList.appendChild(div)
+  let span = document.createElement('span')
+  span.innerText = input.value
+  span.style.display = 'inline-block'
+  span.style.marginRight = '40%'
+  taskList.appendChild(span)
+
+}
+//Exercicio 9
+div.addEventListener('click',selectElement)
+function selectElement(){
+  div.className = 'task selected'
+  div.style.borderRadius = '5px'
+};
+
+
