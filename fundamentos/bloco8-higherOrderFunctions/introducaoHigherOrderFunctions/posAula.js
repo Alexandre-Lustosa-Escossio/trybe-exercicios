@@ -23,7 +23,7 @@ const isWinner = (betNumber, func=doRaffle) => betNumber === func()?winnerPhrase
 console.log(isWinner(5)); */
 
 //Exercicio 3
-const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+/* const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
 const checkAnswers = (studentAnswers, cheatSheet) => {
@@ -42,4 +42,4 @@ const checkAnswers = (studentAnswers, cheatSheet) => {
 
 const returnGrade = (func) => func
 
-console.log(returnGrade(checkAnswers(STUDENT_ANSWERS, RIGHT_ANSWERS)));
+console.log(returnGrade(checkAnswers(STUDENT_ANSWERS, RIGHT_ANSWERS))); */
