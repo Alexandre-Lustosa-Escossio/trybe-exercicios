@@ -45,12 +45,32 @@ const mageTurn = (mageStatus = mageDmgAndMana()) => {
     mage.mana = mageStatus['mana']
 }
 
+const dragonTurn = (dragonStatus = dragonDmg) => {
+  warrior.healthPoints -= dragonDmg
+  mage.healthPoints -= dragonDmg
+  dragon.damage = dragonDmg
+}
+
+const battleLog = (battleMembers) => {
+  if (mage.healthPoints <= 0){
+    delete battleMembers.mage
+  } else if (warrior.healthPoints <= 0){
+    delete battleMembers.warrior
+  } else if (dragon.healthPoints <= 0){
+    delete battleMembers.dragon
+  }
+  return battleMembers
+}
 const gameActions = {
     warriorTurn: warriorTurn,
-    mageTurn: mageTurn
+    mageTurn: mageTurn,
+    dragonTurn: dragonTurn,
+    battleLog: battleLog
   };
 
-gameActions.warriorTurn()
+/* gameActions.warriorTurn()
 console.log(dragon.healthPoints);
 gameActions.mageTurn()
-console.log(dragon.healthPoints);
+console.log(dragon.healthPoints); */
+
+console.log(battleLog(battleMembers));
